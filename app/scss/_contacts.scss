@@ -1,0 +1,203 @@
+.contacts {
+  padding: 260px 0 120px 0;
+}
+.contacts__info {
+  width: 50%;
+  &-title {
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+}
+.contacts__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  a {
+    transition: all 0.5s ease;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &-text {
+    color: rgba(31, 37, 54, 0.80);
+    margin-left: 10px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.contacts__item-svg svg  {
+  width: 20px;
+  height: 20px;
+  path {
+    fill: #849E93;
+  }
+}
+.__social-item {
+  svg {
+    width: 36px;
+    height: 36px;
+    path {
+      fill: #849E93;
+    }
+  }
+}
+.contacts__social-items {
+  margin: 35px 0 60px 0;
+  display: flex;
+}
+.__social-item {
+  margin-right: 30px;
+  display: block;
+  svg path {
+    transition: all 0.5s ease;
+  }
+}
+.contacts__req {
+  &-title {
+    color: rgba(31, 37, 54, 0.81);
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  &-text {
+    color: rgba(31, 37, 54, 0.80);
+    font-size: 18px;
+    line-height: 188%; /* 33.84px */
+    width: 58%;
+  }
+}
+.contacts__content {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__form {
+  border-radius: 20px;
+  background: #F8F8F8;
+  box-shadow: 0px 2px 15px 0px rgba(60, 101, 83, 0.15);
+  padding: 40px 35px 60px 35px;
+  width: 624px;
+  &-title {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &-subtitle {
+    color: rgba(31, 37, 54, 0.80);
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0 35px 0;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &-item {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    input, textarea {
+      border-radius: 100px;
+      background: #FFF;
+      color: #1F2536;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      padding: 25px 35px;
+      width: 100%;
+      font-weight: 400;
+      line-height: 100%; /* 16px */
+      border: 1px solid transparent;
+      transition: all 0.5s ease;
+    }
+    textarea {
+      border-radius: 40px;
+      resize:none;
+    }
+    input[type=submit] {
+      border-radius: 1000px;
+      background: #3c6553;
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 100%;
+      width: 224px;
+      margin-top: 15px;
+      border: 2px solid transparent;
+      transition: all 0.5s ease;
+    }
+  }
+}
+.contacts__form-item.pol {
+  display: flex;
+  align-items: center;
+  p {
+    width: calc(100% - 254px);
+    margin-left: 30px;
+    color: rgba(31, 37, 54, 0.30);
+    line-height: 125%; /* 20px */
+    a {
+      color: #849E93;
+      line-height: 125%;
+      border-bottom: 1px solid #849E93;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .contacts {
+    padding: 180px 0 80px 0;
+  }
+  .contacts__content {
+    flex-direction: column-reverse;
+  }
+  .contacts_form-wrapper {
+    margin-bottom: 40px;
+  }
+  .contacts__form {
+    width: 100%;
+  }
+  .contacts__info {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .contacts {
+    padding: 110px 0 60px 0;
+  }
+  .contacts__form {
+    padding: 25px 15px 35px 15px;
+  }
+  .contacts__form-title, .contacts__info-title, .contacts__req-title {
+    font-size: 24px;
+  }
+  .contacts__form-item input, .contacts__form-item textarea {
+    padding: 15px 20px;
+  }
+  .contacts__form-item.pol {
+    flex-direction: column-reverse;
+    p {
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+  }
+  .contacts__form-item input[type=submit] {
+    width: 100%;
+  }
+  .contacts__req-text {
+    width: 100%;
+  }
+  .contacts__form-subtitle {
+    margin: 10px 0 20px 0;
+  }
+}

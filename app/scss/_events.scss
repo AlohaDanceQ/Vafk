@@ -1,0 +1,215 @@
+.events {
+  padding: 160px 0 120px 0;
+}
+.events__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.events__title {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: normal;
+}
+.events__btn {
+  display: block;
+  width: 317px;
+  text-align: center;
+}
+.events__items {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 30px);
+  margin: 50px 0 0 -15px;
+}
+.events__imp {
+  display: flex;
+  width: calc(100% + 30px);
+  margin: 0 0 50px -15px;
+}
+.events__item.big {
+  width: 64%;
+  height: 470px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  .main__event-info {
+    height: 280px;
+    padding: 0 30px 30px 30px;
+  }
+  .main__event-title {
+    font-size: 24px;
+  }
+  .main__event-subtitle {
+    font-size: 16px;
+  }
+  .main__event-row {
+    margin-top: 25px;
+  }
+}
+.events__item-imp {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  padding: 11px 25px;
+  border-radius: 10px;
+  background: #da5a5a;
+  color: #fff;
+  font-size: 14px;
+  z-index: 1;
+}
+.events__item {
+  border-radius: 10px;
+  border: 1px solid rgba(60, 101, 83, 0.10);
+  background: #FFF;
+  padding: 15px 15px 0px 15px;
+  width: calc(33.3% - 30px);
+  margin: 0 15px 30px 15px;
+  position: relative;
+  &-img {
+    width: 100%;
+    height: 220px;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: all 0.5s ease;
+    }
+  }
+  &-info {
+    padding: 20px 0 65px 0;
+    &-title {
+      color: #1F2536;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 126%; /* 25.2px */
+      margin-bottom: 15px;
+      display: block;
+      transition: all 0.5s ease;
+    }
+    &-text {
+      color: rgba(31, 37, 54, 0.80);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 126%; /* 20.16px */
+    }
+    &-abs {
+      position: absolute;
+      bottom: 25px;
+      display: flex;
+      align-items: center;
+      p {
+        color: rgba(60, 101, 83, 0.62);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 126%; /* 15.12px */
+        transition: all 0.5s ease;
+      }
+      div {
+        padding: 0 0 2px 10px;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .events__imp {
+    flex-direction:column;
+    width: 100%;
+    margin: 0 0 50px 0;
+  }
+  .events__imp .events__item {
+    width: 100%;
+    margin: 0;
+    & .events__item-img {
+      height: 300px;
+    }
+  }
+  .events {
+    padding: 140px 0 80px 0;
+  }
+  .events__title {
+    font-size: 28px;
+    width: 60%;
+  }
+  .events__btn {
+    width: auto;
+  }
+  .events__items {
+    width: calc(100% + 20px);
+    margin: 35px 0 0 -10px;
+  }
+  .events__item.big {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .events__item.big .main__event-info {
+    padding: 0 20px 20px 20px;
+  }
+  .events__item {
+    width: calc(50% - 20px);
+    margin: 0 10px 20px 10px;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .events__title.mar {
+    margin-bottom: 0;
+  }
+  .events {
+    padding: 110px 0 60px 0;
+  }
+  .events__title {
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .events__title-wrapper {
+    flex-direction: column;
+  }
+  .events__item.big {
+    width: 340px;
+    height: 430px;
+  }
+  .events__item.big .main__event-title {
+    font-size: 16px;
+  }
+  .events__item.big .main__event-subtitle {
+    font-size: 14px;
+  }
+  .events__item.big .main__event-row {
+    margin-top: 15px;
+  }
+  .events__items {
+    width: 100%;
+    margin: 35px 0 0 0;
+  }
+  .events__item {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .events__item-info-title {
+    font-size: 16px;
+  }
+  .events__item.big .main__event-info {
+    padding: 0 15px 20px 15px;
+  }
+  .events__imp .events__item .events__item-img {
+    height: 220px;
+  }
+  .events__title-wrapper {
+    margin-bottom: 35px;
+  }
+}
