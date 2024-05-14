@@ -25,7 +25,7 @@ $(function () {
         }
       },
       {
-        breakpoint: 750,
+        breakpoint: 765,
         settings: {
           slidesToShow: 1,
           arrows: false,
@@ -41,6 +41,31 @@ $(function () {
     slidesToScroll: 1,
     dots: false,
     arrows: true,
+    speed: 1000,
+    responsive: [
+      {
+        breakpoint: 1170,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 765,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+          arrows: false,
+        }
+      },
+    ]
+  });
+
+  $('.partners__slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
     speed: 1000,
     responsive: [
       {

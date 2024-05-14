@@ -293,6 +293,12 @@
   .slick-list {
     margin: 0 0 0 -10px;
   }
+  .slick-next, .slick-prev {
+    bottom: -22%;
+  }
+  .slick-dots {
+    margin-top: 35px;
+  }
 }
 
 @media only screen and (max-width: 765px) {
